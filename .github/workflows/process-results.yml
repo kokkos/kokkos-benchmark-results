@@ -23,7 +23,7 @@ jobs:
     - name: Process available benchmark results
       run: |-
         pip3 install -r requirements.txt
-        python3 benchmark_monitor.py -d ./benchmark-results -o output
+        python3 benchmark_monitor.py -s 50 -d ./benchmark-results -o output
 
     - name: Generate nojekyll file
       working-directory: output
