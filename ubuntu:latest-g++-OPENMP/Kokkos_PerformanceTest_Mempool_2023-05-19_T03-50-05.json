@@ -1,0 +1,97 @@
+{
+  "context": {
+    "date": "2023-05-19T03:52:14+00:00",
+    "host_name": "4a530c43f0aa",
+    "executable": "/__w/kokkos/kokkos/builddir/core/perf_test/Kokkos_PerformanceTest_Mempool",
+    "num_cpus": 2,
+    "mhz_per_cpu": 2793,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 49152,
+        "num_sharing": 1
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1310720,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 50331648,
+        "num_sharing": 2
+      }
+    ],
+    "load_avg": [1.38428,0.835449,0.371094],
+    "library_build_type": "release",
+    "CPU architecture": "none",
+    "Default Device": "N6Kokkos6OpenMPE",
+    "GIT_BRANCH": "develop",
+    "GIT_CLEAN_STATUS": "CLEAN",
+    "GIT_COMMIT_DATE": "2023-05-18T23:26:22-04:00",
+    "GIT_COMMIT_DESCRIPTION": "Merge pull request #6047 from masterleinad/simplify_sycl_reductions",
+    "GIT_COMMIT_HASH": "87c7be9",
+    "GPU architecture": "none",
+    "KOKKOS_COMPILER_GNU": "1130",
+    "KOKKOS_ENABLE_ASM": "yes",
+    "KOKKOS_ENABLE_CXX17": "yes",
+    "KOKKOS_ENABLE_CXX20": "no",
+    "KOKKOS_ENABLE_CXX23": "no",
+    "KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK": "no",
+    "KOKKOS_ENABLE_HBWSPACE": "no",
+    "KOKKOS_ENABLE_HWLOC": "yes",
+    "KOKKOS_ENABLE_INTEL_MM_ALLOC": "no",
+    "KOKKOS_ENABLE_LIBDL": "yes",
+    "KOKKOS_ENABLE_LIBRT": "no",
+    "KOKKOS_ENABLE_OPENMP": "yes",
+    "KOKKOS_ENABLE_PRAGMA_IVDEP": "no",
+    "KOKKOS_ENABLE_PRAGMA_LOOPCOUNT": "no",
+    "KOKKOS_ENABLE_PRAGMA_UNROLL": "no",
+    "KOKKOS_ENABLE_PRAGMA_VECTOR": "no",
+    "Kokkos": "OpenMP thread_pool_topology[ 1 x 2 x 1 ]",
+    "Kokkos Version": "4.0.99",
+    "platform": "64bit"
+  },
+  "benchmarks": [
+    {
+      "name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 2236,
+      "real_time": 3.1249103935599321e-04,
+      "cpu_time": 3.1633837209302322e-04,
+      "time_unit": "s",
+      "FOM: fill ops per second": 1.7776509724721044e+07
+    },
+    {
+      "name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 1,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 6148,
+      "real_time": 1.1383885702667516e-04,
+      "cpu_time": 1.1845665256994148e-04,
+      "time_unit": "s",
+      "FOM: cycle ops per second": 9.7594093002854571e+07
+    }
+  ]
+}
