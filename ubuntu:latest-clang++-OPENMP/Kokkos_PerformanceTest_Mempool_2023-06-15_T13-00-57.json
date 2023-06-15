@@ -1,0 +1,97 @@
+{
+  "context": {
+    "date": "2023-06-15T13:06:09+00:00",
+    "host_name": "038f0ac2bc39",
+    "executable": "/__w/kokkos/kokkos/builddir/core/perf_test/Kokkos_PerformanceTest_Mempool",
+    "num_cpus": 2,
+    "mhz_per_cpu": 2295,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 1
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 262144,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 52428800,
+        "num_sharing": 2
+      }
+    ],
+    "load_avg": [1.84814,1.51465,0.800293],
+    "library_build_type": "release",
+    "CPU architecture": "none",
+    "Default Device": "N6Kokkos6OpenMPE",
+    "GIT_BRANCH": "develop",
+    "GIT_CLEAN_STATUS": "CLEAN",
+    "GIT_COMMIT_DATE": "2023-06-15T15:59:50+03:00",
+    "GIT_COMMIT_DESCRIPTION": "snapshot mdspan namespace changes (#6162)",
+    "GIT_COMMIT_HASH": "3163aef",
+    "GPU architecture": "none",
+    "KOKKOS_COMPILER_CLANG": "1400",
+    "KOKKOS_ENABLE_ASM": "no",
+    "KOKKOS_ENABLE_CXX17": "yes",
+    "KOKKOS_ENABLE_CXX20": "no",
+    "KOKKOS_ENABLE_CXX23": "no",
+    "KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK": "no",
+    "KOKKOS_ENABLE_HBWSPACE": "no",
+    "KOKKOS_ENABLE_HWLOC": "yes",
+    "KOKKOS_ENABLE_INTEL_MM_ALLOC": "no",
+    "KOKKOS_ENABLE_LIBDL": "yes",
+    "KOKKOS_ENABLE_LIBRT": "no",
+    "KOKKOS_ENABLE_OPENMP": "yes",
+    "KOKKOS_ENABLE_PRAGMA_IVDEP": "no",
+    "KOKKOS_ENABLE_PRAGMA_LOOPCOUNT": "no",
+    "KOKKOS_ENABLE_PRAGMA_UNROLL": "no",
+    "KOKKOS_ENABLE_PRAGMA_VECTOR": "no",
+    "Kokkos": "OpenMP thread_pool_topology[ 1 x 2 x 1 ]",
+    "Kokkos Version": "4.1.99",
+    "platform": "64bit"
+  },
+  "benchmarks": [
+    {
+      "name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 1509,
+      "real_time": 4.8326619615639526e-04,
+      "cpu_time": 4.8864413518886682e-04,
+      "time_unit": "s",
+      "FOM: fill ops per second": 1.1494700113893924e+07
+    },
+    {
+      "name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 1,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 3629,
+      "real_time": 1.8340439790575887e-04,
+      "cpu_time": 1.8889754753375587e-04,
+      "time_unit": "s",
+      "FOM: cycle ops per second": 6.0576519030414954e+07
+    }
+  ]
+}
