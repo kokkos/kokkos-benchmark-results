@@ -1,0 +1,97 @@
+{
+  "context": {
+    "date": "2023-11-09T19:27:15+00:00",
+    "host_name": "67b6d97a08a8",
+    "executable": "/__w/kokkos/kokkos/builddir/core/perf_test/Kokkos_PerformanceTest_Mempool",
+    "num_cpus": 4,
+    "mhz_per_cpu": 3243,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 524288,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 33554432,
+        "num_sharing": 4
+      }
+    ],
+    "load_avg": [3.48975,1.44238,0.558105],
+    "library_build_type": "release",
+    "CPU architecture": "none",
+    "Default Device": "N6Kokkos6OpenMPE",
+    "GIT_BRANCH": "develop",
+    "GIT_CLEAN_STATUS": "CLEAN",
+    "GIT_COMMIT_DATE": "2023-11-09T09:06:51-10:00",
+    "GIT_COMMIT_DESCRIPTION": "Replace Marsaglia polar method with Box-muller to generate a normally distributed random number (#6556)",
+    "GIT_COMMIT_HASH": "0a83695",
+    "GPU architecture": "none",
+    "KOKKOS_COMPILER_CLANG": "1400",
+    "KOKKOS_ENABLE_ASM": "no",
+    "KOKKOS_ENABLE_CXX17": "yes",
+    "KOKKOS_ENABLE_CXX20": "no",
+    "KOKKOS_ENABLE_CXX23": "no",
+    "KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK": "no",
+    "KOKKOS_ENABLE_HBWSPACE": "no",
+    "KOKKOS_ENABLE_HWLOC": "yes",
+    "KOKKOS_ENABLE_INTEL_MM_ALLOC": "no",
+    "KOKKOS_ENABLE_LIBDL": "yes",
+    "KOKKOS_ENABLE_LIBRT": "no",
+    "KOKKOS_ENABLE_OPENMP": "yes",
+    "KOKKOS_ENABLE_PRAGMA_IVDEP": "no",
+    "KOKKOS_ENABLE_PRAGMA_LOOPCOUNT": "no",
+    "KOKKOS_ENABLE_PRAGMA_UNROLL": "no",
+    "KOKKOS_ENABLE_PRAGMA_VECTOR": "no",
+    "Kokkos": "OpenMP thread_pool_topology[ 1 x 4 x 1 ]",
+    "Kokkos Version": "4.2.99",
+    "platform": "64bit"
+  },
+  "benchmarks": [
+    {
+      "name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 4831,
+      "real_time": 1.4614461374456617e-04,
+      "cpu_time": 1.5053040778306771e-04,
+      "time_unit": "s",
+      "FOM: fill ops per second": 3.8010295813632347e+07
+    },
+    {
+      "name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 1,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 11887,
+      "real_time": 5.8736083452510996e-05,
+      "cpu_time": 6.3652889711449486e-05,
+      "time_unit": "s",
+      "FOM: cycle ops per second": 1.8915118862126040e+08
+    }
+  ]
+}
