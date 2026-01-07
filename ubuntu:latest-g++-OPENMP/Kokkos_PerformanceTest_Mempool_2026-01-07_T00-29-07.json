@@ -1,0 +1,97 @@
+{
+  "context": {
+    "date": "2026-01-07T00:35:04+00:00",
+    "host_name": "0175086a1fb5",
+    "executable": "/__w/kokkos/kokkos/builddir/core/perf_test/Kokkos_PerformanceTest_Mempool",
+    "num_cpus": 4,
+    "mhz_per_cpu": 3244,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 524288,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 33554432,
+        "num_sharing": 4
+      }
+    ],
+    "load_avg": [3.55127,2.70264,1.32373],
+    "library_build_type": "release",
+    "CPU architecture": "none",
+    "Default Device": "OpenMP",
+    "GIT_BRANCH": "develop",
+    "GIT_CLEAN_STATUS": "CLEAN",
+    "GIT_COMMIT_DATE": "2026-01-06T17:28:21-07:00",
+    "GIT_COMMIT_DESCRIPTION": "Remove old work-around for va_printf in InclusiveScan, Sort and SortByKey. (#8777)",
+    "GIT_COMMIT_HASH": "1aadd5e",
+    "GPU architecture": "none",
+    "KOKKOS_COMPILER_GNU": "1330",
+    "KOKKOS_ENABLE_ASM": "yes",
+    "KOKKOS_ENABLE_CXX20": "yes",
+    "KOKKOS_ENABLE_CXX23": "no",
+    "KOKKOS_ENABLE_CXX26": "no",
+    "KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK": "no",
+    "KOKKOS_ENABLE_HWLOC": "yes",
+    "KOKKOS_ENABLE_LIBDL": "yes",
+    "KOKKOS_ENABLE_OPENMP": "yes",
+    "KOKKOS_ENABLE_PRAGMA_IVDEP": "no",
+    "KOKKOS_ENABLE_PRAGMA_LOOPCOUNT": "no",
+    "KOKKOS_ENABLE_PRAGMA_UNROLL": "no",
+    "KOKKOS_ENABLE_PRAGMA_VECTOR": "no",
+    "Kokkos": "OpenMP thread_pool_topology[ 1 x 4 x 1 ]",
+    "Kokkos Version": "5.0.99",
+    "desul atomics version": "79f928075837ffb5d302aae188e0ec7b7a79ae94",
+    "mdspan": "enabled",
+    "mdspan version": "546d4dd63697c6a331554adb6fe650e09b690812",
+    "platform": "64bit"
+  },
+  "benchmarks": [
+    {
+      "name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 4907,
+      "real_time": 1.5680739433462400e-04,
+      "cpu_time": 1.5072395740778482e-04,
+      "time_unit": "s",
+      "FOM: fill ops per second": 3.5425625325714782e+07
+    },
+    {
+      "name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 1,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 14411,
+      "real_time": 4.8483325931580061e-05,
+      "cpu_time": 5.1170865033654861e-05,
+      "time_unit": "s",
+      "FOM: cycle ops per second": 2.2915094594951043e+08
+    }
+  ]
+}
