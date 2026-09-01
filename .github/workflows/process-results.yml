@@ -1,0 +1,40 @@
+name: Process benchmark results
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-benchmark-monitor:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout processing script
+      uses: actions/checkout@v3
+      with:
+        repository: cz4rs/benchmark_monitor
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        path: benchmark-results
+
+    - name: Process available benchmark results
+      run: |-
+        pip3 install -r requirements.txt
+        python3 benchmark_monitor.py -s 50 -d ./benchmark-results -o output
+
+    - name: Generate nojekyll file
+      working-directory: output
+      run: touch .nojekyll
+
+    - name: Deploy
+      if: ${{ github.ref == 'refs/heads/main' }}
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: output
+        branch: deploy-benchmarks
+        clean: true
+        single-commit: true
+
