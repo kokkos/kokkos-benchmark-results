@@ -1,0 +1,112 @@
+{
+  "context": {
+    "date": "2026-09-22T15:47:30+00:00",
+    "host_name": "polaris-esn-02",
+    "executable": "/home/darndt/.ci/builds/nightly_testing_146/000/anl/kokkos_math/kokkos_core/nightly_testing/build/core/perf_test/Kokkos_PerformanceTest_Mempool",
+    "num_cpus": 256,
+    "mhz_per_cpu": 2000,
+    "cpu_scaling_enabled": false,
+    "aslr_enabled": true,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 524288,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 33554432,
+        "num_sharing": 16
+      }
+    ],
+    "load_avg": [1.00879,2.52393,8.96729],
+    "library_version": "v1.9.5",
+    "library_build_type": "release",
+    "json_schema_version": 1,
+    "CPU architecture": "none",
+    "Can access system allocated memory": "0",
+    "Capability": "8.0",
+    "Default Device": "Cuda",
+    "GIT_BRANCH": "HEAD",
+    "GIT_CLEAN_STATUS": "CLEAN",
+    "GIT_COMMIT_DATE": "2026-09-21T12:17:11-06:00",
+    "GIT_COMMIT_DESCRIPTION": "Use ulimit -c 0 in HPSF CI (#9567)",
+    "GIT_COMMIT_HASH": "c1d83bf",
+    "GPU architecture": "AMPERE80",
+    "KOKKOS_COMPILER_GNU": "1430",
+    "KOKKOS_COMPILER_NVCC": "1300",
+    "KOKKOS_ENABLE_ASM": "yes",
+    "KOKKOS_ENABLE_CUDA": "yes",
+    "KOKKOS_ENABLE_CUDA_RELOCATABLE_DEVICE_CODE": "no",
+    "KOKKOS_ENABLE_CXX20": "yes",
+    "KOKKOS_ENABLE_CXX23": "no",
+    "KOKKOS_ENABLE_CXX26": "no",
+    "KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK": "no",
+    "KOKKOS_ENABLE_HWLOC": "no",
+    "KOKKOS_ENABLE_IMPL_CUDA_MALLOC_ASYNC": "no",
+    "KOKKOS_ENABLE_LIBDL": "yes",
+    "KOKKOS_ENABLE_PRAGMA_IVDEP": "no",
+    "KOKKOS_ENABLE_PRAGMA_LOOPCOUNT": "no",
+    "KOKKOS_ENABLE_PRAGMA_UNROLL": "no",
+    "KOKKOS_ENABLE_PRAGMA_VECTOR": "no",
+    "KOKKOS_ENABLE_SERIAL": "yes",
+    "Kokkos Version": "5.2.99",
+    "Kokkos::Cuda[ 0 ] NVIDIA A100 80GB PCIe": "Selected",
+    "Reserved Shared Memory per Block": "1 KiB",
+    "Shared Memory per Block": "48 KiB",
+    "Shared Memory per Block (Optin)": "163 KiB",
+    "Total Global Memory": "79.25 GiB",
+    "desul atomics version": "d602abff752987a45a4da574c0150a6766a39fb5",
+    "macro  CUDA_VERSION": "13000 = version 13.0",
+    "macro  KOKKOS_ENABLE_CUDA": "defined",
+    "mdspan version": "884f17a24301955d47cbb22318f06b8d8bee7ca3",
+    "platform": "64bit",
+    "via Address Translation Service": "0"
+  },
+  "benchmarks": [
+    {
+      "name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Fill/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 4260,
+      "real_time": 1.6307925469483521e-04,
+      "cpu_time": 4.2403655633802814e-04,
+      "time_unit": "s",
+      "FOM: fill ops per second": 3.4063192221444026e+07
+    },
+    {
+      "name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "family_index": 1,
+      "per_family_instance_index": 0,
+      "run_name": "Mempool_Alloc_Dealloc/total_alloc_size:1000000/min_superblock_size:10000/chunk_span:5/fill_stride:1/fill_level:70/repeat_inner:1/manual_time",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 14378,
+      "real_time": 4.8675776533593271e-05,
+      "cpu_time": 2.6405301029350399e-04,
+      "time_unit": "s",
+      "FOM: cycle ops per second": 2.2824494627902868e+08
+    }
+  ]
+}
